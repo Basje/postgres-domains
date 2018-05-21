@@ -3,6 +3,7 @@
 -- • RFC 4122 compliant canonical format check of version 4 uuid;
 -- • Default value of random uuid version 4.
 
+-- CREATE EXTENSION "uuid-ossp";
 -- DROP DOMAIN IF EXISTS public.uuid4 CASCADE;
 CREATE DOMAIN public.uuid4 AS uuid
     DEFAULT uuid_generate_v4()
